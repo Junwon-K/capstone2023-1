@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import { Wrapper, Navigator, Content, MainMenu, MakeFile, TextTitle, 
          TextMenu, Separator1, Separator2, ContentHeader, ContentBody, MenuImage} from "../../../styles/dashboard_main";
 import Head from 'next/head';
-
+import Time from './test.js'
 
 export default function DashBoard_main(){
 
@@ -32,7 +32,9 @@ export default function DashBoard_main(){
       </Navigator>
       <Content>
         <ContentHeader>s</ContentHeader>
-        <ContentBody>d</ContentBody>
+        <ContentBody>d<div>
+                <Time/>
+            </div></ContentBody>
         
       </Content>
     </Wrapper>

@@ -96,7 +96,7 @@ export const LoginOption = styled.div`
     align-items: center;
     padding: 0;
     margin: 0;
-    height: 60px;
+    height: 40px;
     
     
 `
@@ -152,11 +152,34 @@ export const SimpleStart = styled.div`
     width: 100%;
     display: flex;
     flex-direction: row;
-    padding: 50px 0 15px 0;
+    padding: 50px 0 30px 0;
     justify-content: center;
     align-items:center;
-    
-    
+`
+
+export const LoginOtherPlatform = styled.div`
+    width: 270px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    // background-color: red;
+    padding: 5px;
+`
+export const PlatformContainer = styled.div`
+    width: 40px;
+    height: 68px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    // background-color: yellow;
+`
+export const IconText = styled.div`
+    font-size: 11.5px;
+    // padding: 10px 0 0 0;
+    // margin: 5px 0 0 0;
+    font-weight: bold;
 `
 
 export const Form = styled.form`
@@ -181,12 +204,20 @@ export const Text2 = styled.div`
     font-size: 12px;
     
 `
-
-
-export const Footer = styled.div`
-    background-color: pink;
-    margin: 0 768px 0 768px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+export const Text3 = styled.span`
+    width: 300px;
+    font-size: 11px;
+    display: inline;
+    // flex-direction: row;
+    text-align: center;
+    // justify-content: center;
+    padding: 15px 15px 0 15px;
+    margin-top: 10px;
+    font-weight: bold;
 `
+// export const ColorText = styled.span`
+//     color: #677bff;
+//     display: inline;
+// `
+
+

@@ -3,9 +3,10 @@ import axios from 'axios';
 import { useRouter } from 'next/router';
 import { Wrapper, Header, HeaderContainer, Body, MainMenu, 
          PageButton, MainPage, PageLeft, PageRight, TextBox, Text1, Text2, 
-         Blank, GoMakeBox, GoMakeButton, ImageBox, LoginButton, ContainerLeft, ContainerRight, MenuImage } from "../../styles/main_page";
+         Blank, GoMakeBox, GoMakeButton, ImageBox, LoginButton, ContainerLeft, 
+         ContainerRight, MenuImage, ColorText } from "../../styles/main_page";
 import Head from 'next/head';
-import NeRF from './';
+
 
 export default function Main_page(){
 
@@ -35,7 +36,8 @@ export default function Main_page(){
           <PageLeft>
             <TextBox>
               <Text1><h1>다양한 각도로 온라인 쇼핑을 <br/>즐기세요<br/>
-                        3D 이미지가 보여주는 새로운 세계</h1>
+                        <span style={{color: '#677bff'}}>3D 이미지</span>
+                        가 보여주는 새로운 세계</h1>
               </Text1>
               <Text2>동영상을 업로드하면 3D 이미지를 볼 수 있는 링크가 생성됩니다.</Text2>
               <Text2>링크를 이용하여 다양한 곳에서 입체적인 경험을 해보세요.</Text2>

@@ -144,9 +144,28 @@ export const Text3 = styled.div`
     padding: 5px 0 5px 0;
     color: #646466;
     font-size: 20px;
-    
 
 `
+
+export const CategorySelect = styled.div`
+
+    width: 830px;
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: flex-end;
+    select {
+        width: 130px; 
+        height: 30px; 
+        padding: 5px; 
+        color: #8f8f8f;
+        font-size: 12px;
+        font-weight: bold;
+        border-radius: 10px;
+        border: 2px solid #b8b7ba;
+        // border: 2px solid #a3afff;
+    }
+`;
 
 export const Blank = styled.div`
     height: 40px;
