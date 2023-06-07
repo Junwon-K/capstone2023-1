@@ -73,6 +73,7 @@ export const MenuImage = styled.img`
 export const PageButton = styled.div`
     margin: 0px 5% 0 7%;
     cursor: pointer;
+    #212121
     
 `
 

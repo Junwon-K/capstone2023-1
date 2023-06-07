@@ -25,6 +25,7 @@ export default function Main_page(){
             <MenuImage onClick={() => router.push('/main_page')} src="/nerf.png"/>
           </MainMenu>
             <PageButton onClick={() => router.push('/file_input_page')}>링크 만들기</PageButton>
+            <PageButton onClick={() => router.push('/dashboard/main')}>대시보드</PageButton>
           </ContainerLeft>
           <ContainerRight>
             <LoginButton onClick={() => router.push('/login')}>로그인</LoginButton>

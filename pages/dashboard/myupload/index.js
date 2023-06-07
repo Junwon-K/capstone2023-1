@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useRouter } from 'next/router';
 import { Wrapper, Navigator, Content, MainMenu, MakeFile, TextTitle, 
          TextMenu, Separator1, Separator2, ContentHeader, ContentBody, 
-         TextBox, Text1, Text2} from "../../../styles/dashboard_myupload";
+         TextBox, Text1, Text2, MenuImage} from "../../../styles/dashboard_myupload";
 import Head from 'next/head';
 import Product from './product';
 
@@ -39,7 +39,9 @@ export default function DashBoard_main(){
                 <link rel="icon" href="../../public/favicon.ico" />
             </Head>
             <Navigator>
-                <MainMenu onClick={() => router.push('/dashboard/main')}>NeRF</MainMenu>
+                <MainMenu>
+                    <MenuImage onClick={() => router.push('/dashboard/main')} src="/nerf.png"/>
+                </MainMenu>
                 <MakeFile onClick={() => router.push('/file_input_page')}>파일 업로드</MakeFile>
                 <Separator1></Separator1>
                 <TextTitle>모델 라이브러리</TextTitle>
@@ -64,45 +66,3 @@ export default function DashBoard_main(){
     );
 }
 
-
-// import { useRouter } from 'next/router';
-// import { Wrapper, Navigator, Content, MainMenu, MakeFile, TextTitle, 
-//          TextMenu, Separator1, Separator2, ContentHeader, ContentBody, 
-//          TextBox, Text1, Text2} from "../../../styles/dashboard_myupload";
-// import Head from 'next/head';
-// import Product from './product';
-
-// export default function DashBoard_main(){
-//     const router = useRouter();
-
-//     return (
-//         <Wrapper>
-//             <Head>
-//                 <title>NeRF - 원하는 영상을 링크로 만들어봐요</title>
-//                 <link rel="icon" href="../../public/favicon.ico" />
-//             </Head>
-//             <Navigator>
-//                 <MainMenu onClick={() => router.push('/dashboard/main')}>NeRF</MainMenu>
-//                 <MakeFile onClick={() => router.push('/file_input_page')}>파일 업로드</MakeFile>
-//                 <Separator1></Separator1>
-//                 <TextTitle>모델 라이브러리</TextTitle>
-//                 <TextMenu onClick={() => router.push('/dashboard/model')}>생성한 모델</TextMenu>
-//                 <TextMenu onClick={() => router.push('/dashboard/myupload')}>업로드한 영상</TextMenu>
-//                 <Separator2></Separator2>
-//                 <TextTitle>설정</TextTitle>
-//                 <TextMenu>로그아웃</TextMenu>
-//             </Navigator>
-//             <Content>
-//                 <ContentHeader>
-//                     <TextBox>
-//                         <Text1>전체 영상 목록</Text1>
-//                         <Text2>내가 지금까지 올렸던 동영상을 볼 수 있어요!</Text2>
-//                     </TextBox>
-//                 </ContentHeader>
-//                 <ContentBody>
-//                     <Product />
-//                 </ContentBody>
-//             </Content>
-//         </Wrapper>
-//     );
-// }

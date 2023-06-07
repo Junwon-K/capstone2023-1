@@ -17,9 +17,11 @@ export const Navigator = styled.div`
     // width: 180px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    justify-content: flex-start;
+    align-content: flex-start;
     padding: 10px 24px 10px 24px;
+    // margin: 0 170px 0 0;
+    postion: fixed;
 `
 
 export const MainMenu = styled.div`
@@ -33,8 +35,8 @@ export const MainMenu = styled.div`
 export const MenuImage = styled.img`
     // padding-top: 10px;
     padding: 30px 0px 20px 0px;
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 150px;
+    max-height: 150px;
 `
 
 
@@ -95,16 +97,82 @@ export const Separator2 = styled.div`
 
 export const Content = styled.div`
     background-color: #f6f6fa;
-    width: 1700px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    background-size: cover;
+    padding-left: 170px;
 
 `
 export const ContentHeader = styled.div`
+    height: 120px;
+    // background-color: red;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    
+`
+
+export const TextBox = styled.div`
+    width: 430px;
+    // background-color: yellow;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    text-align: start;
+    margin-bottom: 10px;
+
 
 `
+
+export const Text1 = styled.div`
+    font-size: 21px;
+    font-weight: 800;
+    margin-bottom: 2px;
+`
+
+export const Text2 = styled.div`
+    color: #646466;
+    font-size: 14px;
+    font-weight: 600;
+`
+
 
 export const ContentBody = styled.div`
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    overflox: overlay;
+    padding-top: 120px;
+`
+
+export const BodyTextBox = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-text: center;
 
 `
+
+export const BodyText1 = styled.div`
+    color: #6073ff;
+    font-size: 21px;
+    font-weight: 800;
+    
+`
+
+export const BodyText2 = styled.div`
+    font-size: 40px;
+    font-weight: 800;
+
+`
+
+export const GifBox = styled.div`
+    display: flex;
+    flex: 
+
+`
+

@@ -2,7 +2,8 @@ import { useState } from 'react';
 import axios from 'axios';
 import { useRouter } from 'next/router';
 import { Wrapper, Navigator, Content, MainMenu, MakeFile, TextTitle, 
-         TextMenu, Separator1, Separator2, ContentHeader, ContentBody, MenuImage} from "../../../styles/dashboard_main";
+         TextMenu, Separator1, Separator2, ContentHeader, ContentBody, MenuImage,
+         TextBox, Text1, Text2, BodyTextBox, BodyText1, BodyText2, GifBox} from "../../../styles/dashboard_main";
 import Head from 'next/head';
 import Time from './test.js'
 
@@ -31,11 +32,22 @@ export default function DashBoard_main(){
         <TextMenu>로그아웃</TextMenu>
       </Navigator>
       <Content>
-        <ContentHeader>s</ContentHeader>
-        <ContentBody>d<div>
-                <Time/>
-            </div></ContentBody>
+        {/* <ContentHeader>
+          <TextBox>
+            <Text1></Text1>
+            <Text2></Text2>
+          </TextBox>
+        </ContentHeader> */}
+        <ContentBody>
+          <BodyTextBox>
+            <BodyText1>3D experience</BodyText1>
+            <BodyText2>판매율을 높여보세요</BodyText2>
+          </BodyTextBox>
+          <GifBox>
+          <img src="/dash_main_1.gif"/>
+          </GifBox>
         
+        </ContentBody>
       </Content>
     </Wrapper>
   )

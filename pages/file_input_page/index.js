@@ -57,6 +57,8 @@ export default function File() {
     const fd = new FormData();
     fd.append("file", file);
 
+    console.log(category);
+
     const userIdx = localStorage.getItem('userIdx');
     // if (userIdx) {
     //     fd.append("userIdx", userIdx);
@@ -96,6 +98,7 @@ export default function File() {
             <MenuImage onClick={() => router.push('/main_page')} src="/nerf.png"/>
           </MainMenu>
             <PageButton onClick={() => router.push('/file_input_page')}>링크 만들기</PageButton>
+            <PageButton onClick={() => router.push('/dashboard/main')}>대시보드</PageButton>
           </ContainerLeft>
           <ContainerRight>
             <LoginButton onClick={() => router.push('/login')}>로그인</LoginButton>
@@ -105,7 +108,7 @@ export default function File() {
       <Body>
         <Content>
           <TextBox>
-            <Text1><strong>3D Commerce solution</strong></Text1>
+            <Text1><strong>Simple 3D Converter</strong></Text1>
             <Text2><strong>다양한 3D 이미지를 손쉽게 만들어봐요</strong></Text2>
             <Text3>영상을 업로드 하면 3D 이미지 링크를 얻을 수 있어요</Text3>
             <Text3>다양한 장소에 사용해보세요 </Text3>
@@ -113,9 +116,14 @@ export default function File() {
           <CategorySelect>
           <select value={category} onChange={handleCategoryChange}>
             <option value="default" disabled>Select Category</option>
-            <option value="category1">Category 1</option>
-            <option value="category2">Category 2</option>
-            <option value="category3">Category 3</option>
+            <option value="bottle">Bottle</option>
+            <option value="cup">Cup</option>
+            <option value="chair">Chair</option>
+            <option value="potted plant">Plant</option>
+            <option value="book">Book</option>
+            <option value="laptop">Laptop</option>
+            <option value="cell phone">Cell Phone</option>
+            <option value="bicycle">Bicycle</option>
           </select>
         </CategorySelect>
           <FileBox>

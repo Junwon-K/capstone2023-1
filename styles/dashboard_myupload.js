@@ -17,9 +17,10 @@ export const Navigator = styled.div`
     // width: 180px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    justify-content: flex-start;
+    align-content: flex-start;
     padding: 10px 24px 10px 24px;
+    // margin: 0 170px 0 0;
 `
 
 export const MainMenu = styled.div`
@@ -28,6 +29,13 @@ export const MainMenu = styled.div`
     display: flex;
     justify-content: center;
     align-content: center;
+`
+
+export const MenuImage = styled.img`
+    // padding-top: 10px;
+    padding: 30px 0px 20px 0px;
+    max-width: 150px;
+    max-height: 150px;
 `
 
 
@@ -88,30 +96,53 @@ export const Separator2 = styled.div`
 
 export const Content = styled.div`
     background-color: #f6f6fa;
-    width: 1700px;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    padding-left: 170px;
 
 `
 export const ContentHeader = styled.div`
     height: 120px;
-    background-color: red;
+    // background-color: red;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
     
 `
 
 export const TextBox = styled.div`
+    width: 430px;
+    // background-color: yellow;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    text-align: start;
+    margin-bottom: 10px;
+
 
 `
 
 export const Text1 = styled.div`
-
+    font-size: 21px;
+    font-weight: 800;
+    margin-bottom: 2px;
 `
 
 export const Text2 = styled.div`
-
+    color: #646466;
+    font-size: 14px;
+    font-weight: 600;
 `
 
 
 export const ContentBody = styled.div`
+    height: 900px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    overflox: overlay;
 
 `
