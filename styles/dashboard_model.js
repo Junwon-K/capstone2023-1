@@ -20,6 +20,7 @@ export const Navigator = styled.div`
     align-content: flex-start;
     padding: 10px 24px 10px 24px;
     // margin: 0 170px 0 0;
+    border-right: 1px solid #f6f6fa;
 `
 
 export const MainMenu = styled.div`
@@ -92,7 +93,10 @@ export const Separator2 = styled.div`
 `
 
 export const Content = styled.div`
-    background-color: #f6f6fa;
+    // background-color: #f6f6fa;
+    // background-color: rgba(246, 246, 250);
+    // background-color: gray;
+    
     width: 100%;
     display: flex;
     flex-direction: column;

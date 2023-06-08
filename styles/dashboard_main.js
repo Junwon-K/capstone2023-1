@@ -97,10 +97,12 @@ export const Separator2 = styled.div`
 
 export const Content = styled.div`
     background-color: #f6f6fa;
-    width: 100%;
+    width: 1740px; // 1740이 딱맞는듯
     display: flex;
     flex-direction: column;
-    padding-left: 170px;
+    // padding-left: 170px;
+    // background-color: red;
+    height: 100vh;
 
 `
 export const ContentHeader = styled.div`
@@ -120,7 +122,7 @@ export const TextBox = styled.div`
     // flex-direction: column;
     // justify-content: center;
     // align-items: center;
-    text-align: start;
+    text-align: center;
     margin-bottom: 10px;
 
 
@@ -139,14 +141,28 @@ export const Text2 = styled.div`
 `
 
 
+// export const ContentBody = styled.div`
+//     display: flex;
+//     flex-direction: column;
+//     flex-wrap: wrap;
+//     overflow-y: scroll;
+//     overflow: overlay;
+//     padding-top: 120px;
+//     align-items: center;
+//     // justify-content: center;
+
+// `
+
 export const ContentBody = styled.div`
-    height: 900px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     overflow-y: scroll;
-    overflox: overlay;
+    overflow: overlay; // Corrected typo here
     padding-top: 120px;
+    align-items: center;
+    // justify-content: center;
+    height: calc(100vh - 120px);
 `
 
 export const BodyTextBox = styled.div`
@@ -154,25 +170,37 @@ export const BodyTextBox = styled.div`
     display: flex;
     flex-direction: column;
     align-text: center;
+    align-items: center;
+    justify-content: center;
 
 `
 
 export const BodyText1 = styled.div`
     color: #6073ff;
-    font-size: 21px;
+    font-size: 25px;
     font-weight: 800;
     
 `
 
 export const BodyText2 = styled.div`
-    font-size: 40px;
+    font-size: 37px;
     font-weight: 800;
 
 `
 
 export const GifBox = styled.div`
     display: flex;
-    flex: 
+    flex: direction: row;
+    margin-bottom: 180px;
 
 `
+export const Blank = styled.div`
+    background-color: red;
+    height: 170px;
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 
+`
